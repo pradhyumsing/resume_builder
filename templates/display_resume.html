@@ -1,0 +1,66 @@
+<!-- templates/builder/display_resume.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+          }
+          
+          .resume {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          }
+          
+          header {
+            text-align: center;
+          }
+          
+          h1 {
+            margin: 0;
+            font-size: 28px;
+          }
+          
+          p {
+            margin: 5px 0;
+          }
+          
+          section {
+            margin-bottom: 20px;
+          }
+          
+          h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+          }
+          
+    
+          
+    </style>
+    </head>
+
+<body>
+    <h1 style="color: #333;">{{ resume.full_name }}</h1>
+    <p>Email: {{ resume.email }}</p>
+    <p>Phone: {{ resume.phone_number }}</p>
+
+    <h2 style="color: #333;">Education</h2>
+    <p style="color: #666;">{{ resume.education }}</p>
+
+    <h2 style="color: #333;">Work Experience</h2>
+    <p style="color: #666;">{{ resume.work_experience }}</p>
+
+    <h2 style="color: #333;">Skills</h2>
+    <p style="color: #666;">{{ resume.skills }}</p>
+</body>
+</html>
